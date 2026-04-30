@@ -1,4 +1,4 @@
-# TechQuiz Pro 🎯
+# The MOCK ARENA 🎯
 
 > **MNC Placement Prep — All-in-One Technical Quiz App**
 
