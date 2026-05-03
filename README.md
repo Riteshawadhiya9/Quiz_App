@@ -2,7 +2,7 @@
 
 > **MNC Placement Prep — All-in-One Technical Quiz App**
 
-A comprehensive, dark-themed quiz application for software engineering interview preparation, covering **600+ curated questions** across four core subjects tested at top MNC placements.
+A comprehensive, dark-themed quiz application for software engineering interview preparation, covering **850+ curated questions** across core subjects tested at top MNC placements.
 
 ---
 
@@ -14,18 +14,22 @@ A comprehensive, dark-themed quiz application for software engineering interview
 | ☕ **Java OOP** | 260 | Classes, Inheritance, Polymorphism, Design Patterns, SOLID |
 | 📊 **DSA** | 225 | Arrays, Trees, Graphs, DP, Sorting, Searching |
 | 🗄️ **SQL** | ~100 | Joins, Aggregation, Subqueries, Indexing, Transactions |
+| 🛢️ **DBMS** | ~80 | Normalization, Transaction, Concurrency, SQL Queries, Architecture |
+| 🖥️ **Operating Systems** | ~100 | Process Scheduling, Deadlocks, Memory Management, File Systems |
+| ⚡ **JavaScript** | ~75 | Event Loop, Closures, Async/Await, Coercion, Prototypes, ES6+ |
+| ⚛️ **React.js** | ~90 | Hooks, State, Context API, Performance, SSR, Concurrent Features |
 
 ---
 
 ## ✨ Features
 
 - ⚡ **Instant feedback** — correct/wrong answer with detailed explanations
-- 🔖 **Difficulty filtering** — Easy / Medium / Hard
-- 🏷️ **Topic filtering** — drill down by specific topic within each subject
+- 🔖 **Difficulty filtering** — Easy / Medium / Hard / Scenario
+- 🏷️ **Topic filtering** — drill down by highly-specific interview topics
 - 📄 **Pagination** — clean 10-questions-per-page layout
 - 💾 **Progress persistence** — answers & active subject saved in `localStorage`
 - 📊 **Score tracking** — live score counter per subject session
-- 🌙 **Dark mode** — eye-friendly design throughout
+- 🌙 **Dark mode** — eye-friendly, beautiful UI design throughout
 
 ---
 
@@ -36,23 +40,16 @@ techquiz-pro/
 ├── public/                  # Static assets
 ├── src/
 │   ├── components/
-│   │   └── QuizApp.jsx      # Main quiz component (CN data inline, imports others)
+│   │   └── QuizApp.jsx      # Main application logic and UI
 │   ├── data/
-│   │   ├── cn/              # Computer Networks (inline in QuizApp.jsx)
-│   │   ├── dsa/             # DSA questions (5 split files + index.js)
-│   │   │   ├── index.js
-│   │   │   ├── dsa_questions_1.js
-│   │   │   ├── dsa_questions_2.js
-│   │   │   ├── dsa_questions_3.js
-│   │   │   ├── dsa_questions_4.js
-│   │   │   └── dsa_questions_5.js
-│   │   ├── java/            # Java OOP questions (3 split files + index.js)
-│   │   │   ├── index.js
-│   │   │   ├── java_questions_1.js
-│   │   │   ├── java_questions_2.js
-│   │   │   └── java_questions_3.js
-│   │   └── sql/             # SQL questions
-│   │       └── index.js
+│   │   ├── cn/              # Computer Networks
+│   │   ├── dsa/             # DSA questions
+│   │   ├── java/            # Java OOP questions
+│   │   ├── sql/             # SQL questions
+│   │   ├── os/              # Operating System questions
+│   │   ├── dbms/            # Database Management Systems questions
+│   │   ├── javascript/      # Modern JavaScript questions
+│   │   └── react/           # React.js questions
 │   ├── styles/
 │   │   └── index.css        # Global styles & CSS reset
 │   ├── App.jsx              # Root component
@@ -60,7 +57,6 @@ techquiz-pro/
 ├── index.html
 ├── package.json
 ├── vite.config.js
-├── eslint.config.js
 └── .gitignore
 ```
 
