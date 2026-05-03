@@ -4,6 +4,9 @@ import { DSA_Q } from "../data/dsa/index";
 import { JAVA_Q } from "../data/java/index";
 import { CN_Q } from "../data/cn/index";
 import { OS_Q } from "../data/os/index";
+import { DBMS_Q } from "../data/dbms/index";
+import { JS_Q } from "../data/javascript/index";
+import { REACT_Q } from "../data/react/index";
 
 
 
@@ -339,6 +342,57 @@ const SUBJECTS = {
       easy: { color: "#4ade80", bg: "rgba(74,222,128,0.13)", label: "Easy" },
       medium: { color: "#fbbf24", bg: "rgba(251,191,36,0.13)", label: "Moderate" },
       hard: { color: "#f87171", bg: "rgba(248,113,113,0.13)", label: "Advanced" },
+      scenario: { color: "#a78bfa", bg: "rgba(167,139,250,0.13)", label: "Scenario" },
+    }
+  },
+  dbms: {
+    key: "dbms",
+    name: "DBMS",
+    short: "DBMS",
+    emoji: "🛢️",
+    questions: DBMS_Q,
+    accent: "#ec4899",
+    accentBg: "rgba(236,72,153,0.12)",
+    gradient: "linear-gradient(135deg,#1f121b 0%,#2e1525 50%,#1a0f16 100%)",
+    headerBg: "linear-gradient(135deg,#2e1525 0%,#4a1d38 60%,#2e1525 100%)",
+    diffColors: {
+      easy: { color: "#4ade80", bg: "rgba(74,222,128,0.13)", label: "Easy" },
+      medium: { color: "#fbbf24", bg: "rgba(251,191,36,0.13)", label: "Medium" },
+      hard: { color: "#f87171", bg: "rgba(248,113,113,0.13)", label: "Hard" },
+      scenario: { color: "#a78bfa", bg: "rgba(167,139,250,0.13)", label: "Scenario" },
+    }
+  },
+  javascript: {
+    key: "javascript",
+    name: "JavaScript",
+    short: "JS",
+    emoji: "⚡",
+    questions: JS_Q,
+    accent: "#facc15",
+    accentBg: "rgba(250,204,21,0.12)",
+    gradient: "linear-gradient(135deg,#1f1c0b 0%,#2e2a10 50%,#1a1809 100%)",
+    headerBg: "linear-gradient(135deg,#2e2a10 0%,#4a441a 60%,#2e2a10 100%)",
+    diffColors: {
+      easy: { color: "#4ade80", bg: "rgba(74,222,128,0.13)", label: "Easy" },
+      medium: { color: "#fbbf24", bg: "rgba(251,191,36,0.13)", label: "Medium" },
+      hard: { color: "#f87171", bg: "rgba(248,113,113,0.13)", label: "Hard" },
+      scenario: { color: "#a78bfa", bg: "rgba(167,139,250,0.13)", label: "Scenario" },
+    }
+  },
+  react: {
+    key: "react",
+    name: "React.js",
+    short: "React",
+    emoji: "⚛️",
+    questions: REACT_Q,
+    accent: "#38bdf8",
+    accentBg: "rgba(56,189,248,0.12)",
+    gradient: "linear-gradient(135deg,#0c1a24 0%,#11293a 50%,#0c1a24 100%)",
+    headerBg: "linear-gradient(135deg,#11293a 0%,#1b405c 60%,#11293a 100%)",
+    diffColors: {
+      easy: { color: "#4ade80", bg: "rgba(74,222,128,0.13)", label: "Easy" },
+      medium: { color: "#fbbf24", bg: "rgba(251,191,36,0.13)", label: "Medium" },
+      hard: { color: "#f87171", bg: "rgba(248,113,113,0.13)", label: "Hard" },
       scenario: { color: "#a78bfa", bg: "rgba(167,139,250,0.13)", label: "Scenario" },
     }
   }
