@@ -1,4 +1,4 @@
-# TechQuiz Pro 🎯
+# The MOCK ARENA 🎯
 
 > **MNC Placement Prep — All-in-One Technical Quiz App**
 
@@ -86,8 +86,6 @@ npm install
 # Start development server
 npm run dev
 ```
-
-Open [http://localhost:5173](http://localhost:5173) in your browser.
 
 ### Build for Production
 
