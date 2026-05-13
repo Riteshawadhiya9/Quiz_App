@@ -1,3 +1,5 @@
+import { SQL_QUERIES_Q } from './sql_queries.js';
+
 export const SQL_Q = [
   // Basics
   {id:"sql1",diff:"easy",topic:"Basics",q:"Which SQL statement is used to extract data from a database?",opts:["GET","EXTRACT","SELECT","OPEN"],ans:2,exp:"The SELECT statement is used to query and extract data from a database."},
@@ -205,5 +207,8 @@ export const SQL_Q = [
     "SELECT UserId, LoginDate FROM Logins ORDER BY LoginDate ASC LIMIT 1;",
     "SELECT UserId, FIRST(LoginDate) FROM Logins GROUP BY UserId;",
     "SELECT UserId, LoginDate FROM Logins WHERE LoginDate = MIN(LoginDate);"
-  ],ans:0,exp:"Grouping by UserId and taking the MIN(LoginDate) is the standard and most efficient way to find the earliest event per group."}
+  ],ans:0,exp:"Grouping by UserId and taking the MIN(LoginDate) is the standard and most efficient way to find the earliest event per group."},
+
+  // ─── SQL Queries (Basic → Advanced) ─────────────────────────────────────────
+  ...SQL_QUERIES_Q,
 ];
